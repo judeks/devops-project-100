@@ -1,0 +1,43 @@
+
+
+
+Local machine ---> SSH(Secure Shell) and EC2 (Elastic Compute Cloud)
+
+managed system
+- /bin, /sbin , /lib, /lib, /boot, /etc
+
+# kernel (bash, shell scripting)
+
+#daemon
+
+# All hidden file starts with . (.env, .lix)
+
+
+# package Management: yum, apt
+  yum install/uninstall 
+
+  for example install nginx(yum install server web, reverse proxy, load balancer)
+
+# systemctl (systemctl action (
+    status, restart, start, stop, reload, disable
+)) service_name
+
+Managed User
+ - /home, /root
+
+
+data Storage
+ - /var, /tmp , /srv
+
+peripheric and material
+  /dev , /proc , /sys
+
+
+software and extension
+  /opt, /User
+
+mount
+  /mnt , /media
+
+
+
