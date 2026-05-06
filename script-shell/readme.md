@@ -70,5 +70,20 @@
 
 
      
-   
+# Project for monitoring aws ressource for optimizing cost
+
+ * Install aws cli
+
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv2.zip"
+ * Configure cli to connect ot aws
+     
+       aws configure
+
+ * List iam users for an account
+          
+          aws iam list-users
+ * Get aws user account name
+ 
+           aws iam list-users | jq ".Users[].UserName"
+
    
