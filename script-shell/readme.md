@@ -86,4 +86,22 @@
  
            aws iam list-users | jq ".Users[].UserName"
 
+## Execute task at a specific time with crontab
+   * Install crontab
+
+          apt-get intstall crontab
+
+   * Acces to crontab file
+
+          crontab -e
+
+   * Instruction to execute report of usage aws ressource through aws-optimize-ressources-cost.sh at 17:00 every day
+ 
+           0  17  * * * /home/ec2-user/aws-optimize-ressources-cost.sh
+
+   * List all cron to be executing
+          
+           crontab -l
+
+
    

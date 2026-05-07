@@ -13,24 +13,29 @@
 
 #
 #
+
+FILES="/home/ec2-user/ressources-cost.txt"
+
 #aws s3
-echo "list all s3"
-aws s3 ls
-echo "end s3"
+echo "list all s3" >> $FILES
+aws s3 ls >> $FILES
+echo "end s3" >> $FILES
 
 #list ec2 instance
-aws ec2 describe-instances
-echo "end ec2"
+aws ec2 describe-instances >> $FILES
+echo "end ec2" >> $FILES
 
 #
 #aws lambda
-echo "list all lambda"
-aws lambda list-functions
-echo "end lambda"
+echo "list all lambda" >> $FILES
+aws lambda list-functions >> $FILES
+echo "end lambda" >> $FILES
 
 #
 #aws IAM users
-echot "list all IAM users"
-aws iam list-users
-echo "end IAM users"
+echot "list all IAM users" >> $FILES
+aws iam list-users >> $FILES
+echo "end IAM users" >> $FILES
+
+
 
