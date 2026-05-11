@@ -82,7 +82,7 @@
 * Apres avoir resoudre le conflit
 
       git rebase --continue
-      apres 
+      après 
       Git rebase
     
 
