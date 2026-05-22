@@ -32,8 +32,35 @@ Pour cela on le
 
 # Création d’une alarme CloudWatch pour surveiller les activités critiques.
 
+MONITORING DANS CODEBUILD
+PERFORMANCE INDICATOR:
 
-                    
+----> CODEBUILD METRIC
+    - build duration
+    - build startime
+    - build status(failed, success, in progress)
+    - environment usage
+    - phase duration
+    - phase starttime
+    - phase status
+    - downloadsource duration
+    - queued duration
+
+----> RESOURCE METRICS(CPU, MEMOIRE, STOCKAGE)
+      - CPUUTILIZED
+      - CPUUTILIZEDPERCENT
+      - MEMORYUTILIZED
+      - MEMORYUTILIZEDPERCENT
+      - STORAGE READ BYTE(S3, EBS)
+      - WRITE
+
+----> ALARMS
+       ---> FAILED BUILD
+       ---> DURATION
+
+## aws code build --> setup, build, test , generate artifact, deploy, logging(cloudtrail), monitoring
+
+   - ![CloudTrail](images/1-cloudtchwatch.png)        
 
 
 
